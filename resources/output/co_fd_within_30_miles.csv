@@ -1,0 +1,5 @@
+agency_name,hq_addr1,hq_addr2,hq_city,hq_state,hq_zip,Full_Address,Latitude,Longitude,Within_30_Miles
+Castle Rock Fire & Rescue Department,300 Perry ST, ,Castle Rock,CO,80104-2421,"300 Perry ST, Castle Rock, CO 80104-2421",39.3727614,-104.8583873,True
+Colorado Springs Fire Department,375 Printers PKWY, ,Colorado Springs,CO,80910,"375 Printers PKWY, Colorado Springs, CO 80910",38.8264974,-104.7852186,True
+Monument Fire District,"16055 Old Forest Point, STE 103", ,Monument,CO,80132-8670,"16055 Old Forest Point, STE 103, Monument, CO 80132-8670",39.0673973,-104.8483282,True
+USAF Academy Fire & Emergency Services,6202 Pine DR STE 100, ,USAF Academy,CO,80840,"6202 Pine DR STE 100, USAF Academy, CO 80840",38.9983573,-104.8617533,True

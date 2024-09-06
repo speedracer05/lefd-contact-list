@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_135d12b07fd5fbd86906110d27ebdf2f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_135d12b07fd5fbd86906110d27ebdf2f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_135d12b07fd5fbd86906110d27ebdf2f = L.map(
+                "map_135d12b07fd5fbd86906110d27ebdf2f",
+                {
+                    center: [39.0911, -104.8726],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_80501bbc82a5e96cb14d33d92c6a6b79 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_80501bbc82a5e96cb14d33d92c6a6b79.addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var circle_2a5b3e9929b2c02e9354ab0516cc1c0e = L.circle(
+                [39.0911, -104.8726],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 48280.2, "stroke": true, "weight": 3}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+        var popup_9afa3fbf3c5d204d3209a19e63e86a97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25d469c1f269e1f38ec0b3fcfbbcf453 = $(`<div id="html_25d469c1f269e1f38ec0b3fcfbbcf453" style="width: 100.0%; height: 100.0%;">Within 30 Miles</div>`)[0];
+                popup_9afa3fbf3c5d204d3209a19e63e86a97.setContent(html_25d469c1f269e1f38ec0b3fcfbbcf453);
+            
+        
+
+        circle_2a5b3e9929b2c02e9354ab0516cc1c0e.bindPopup(popup_9afa3fbf3c5d204d3209a19e63e86a97)
+        ;
+
+        
+    
+    
+            var marker_639ce97e323bc26938f14c9d71f8fd8f = L.marker(
+                [39.3727614, -104.8583873],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_3d2fcf52acf15af096905a5b8821ec37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_639ce97e323bc26938f14c9d71f8fd8f.setIcon(icon_3d2fcf52acf15af096905a5b8821ec37);
+        
+    
+        var popup_a82b894fdf0c2c564b6783cc2e1f1b4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e768934a44317fc935ff58b1027299a1 = $(`<div id="html_e768934a44317fc935ff58b1027299a1" style="width: 100.0%; height: 100.0%;">Castle Rock Fire & Rescue Department<br>300 Perry ST, Castle Rock, CO 80104-2421</div>`)[0];
+                popup_a82b894fdf0c2c564b6783cc2e1f1b4c.setContent(html_e768934a44317fc935ff58b1027299a1);
+            
+        
+
+        marker_639ce97e323bc26938f14c9d71f8fd8f.bindPopup(popup_a82b894fdf0c2c564b6783cc2e1f1b4c)
+        ;
+
+        
+    
+    
+            var marker_ace9eba1e626d8bb03b7a2af588f2f65 = L.marker(
+                [38.8264974, -104.7852186],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_bc9c4e3c231a1c06e426eb690f5372e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ace9eba1e626d8bb03b7a2af588f2f65.setIcon(icon_bc9c4e3c231a1c06e426eb690f5372e6);
+        
+    
+        var popup_252578d2d29acb163645320bb749f09b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dce3bc9666ff2eccc3a4c8eecc3c3985 = $(`<div id="html_dce3bc9666ff2eccc3a4c8eecc3c3985" style="width: 100.0%; height: 100.0%;">Colorado Springs Fire Department<br>375 Printers PKWY, Colorado Springs, CO 80910</div>`)[0];
+                popup_252578d2d29acb163645320bb749f09b.setContent(html_dce3bc9666ff2eccc3a4c8eecc3c3985);
+            
+        
+
+        marker_ace9eba1e626d8bb03b7a2af588f2f65.bindPopup(popup_252578d2d29acb163645320bb749f09b)
+        ;
+
+        
+    
+    
+            var marker_be6bde4484139c8fb3be1fc51056ba7a = L.marker(
+                [39.0673973, -104.8483282],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_71ee890f4824f711c662eca4780e009c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be6bde4484139c8fb3be1fc51056ba7a.setIcon(icon_71ee890f4824f711c662eca4780e009c);
+        
+    
+        var popup_b3b5592a0c87e929e98dc959a16fa000 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d591506c18cc554647fcb2d1c9948792 = $(`<div id="html_d591506c18cc554647fcb2d1c9948792" style="width: 100.0%; height: 100.0%;">Monument Fire District<br>16055 Old Forest Point, STE 103, Monument, CO 80132-8670</div>`)[0];
+                popup_b3b5592a0c87e929e98dc959a16fa000.setContent(html_d591506c18cc554647fcb2d1c9948792);
+            
+        
+
+        marker_be6bde4484139c8fb3be1fc51056ba7a.bindPopup(popup_b3b5592a0c87e929e98dc959a16fa000)
+        ;
+
+        
+    
+    
+            var marker_680480dcf2849fcc8b045a3c355c3bce = L.marker(
+                [38.9983573, -104.8617533],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_907154787168c00c2c0547df0b0e2768 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_680480dcf2849fcc8b045a3c355c3bce.setIcon(icon_907154787168c00c2c0547df0b0e2768);
+        
+    
+        var popup_cb682b1c196f4834e5c4fa7111064e18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68cd543e436ea27ff72d20bc717cbb45 = $(`<div id="html_68cd543e436ea27ff72d20bc717cbb45" style="width: 100.0%; height: 100.0%;">USAF Academy Fire & Emergency Services<br>6202 Pine DR STE 100, USAF Academy, CO 80840</div>`)[0];
+                popup_cb682b1c196f4834e5c4fa7111064e18.setContent(html_68cd543e436ea27ff72d20bc717cbb45);
+            
+        
+
+        marker_680480dcf2849fcc8b045a3c355c3bce.bindPopup(popup_cb682b1c196f4834e5c4fa7111064e18)
+        ;
+
+        
+    
+    
+            var marker_f8060afe8a572f4732cc7a62a735f0fe = L.marker(
+                [39.7358721, -104.9787254],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_fa49ebcec64be461b8f574c71c97cc40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f8060afe8a572f4732cc7a62a735f0fe.setIcon(icon_fa49ebcec64be461b8f574c71c97cc40);
+        
+    
+        var popup_3dbc88f83fafd018f5621b0b6bfb7ea6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f188c463a45d8bffadb1258d82f77460 = $(`<div id="html_f188c463a45d8bffadb1258d82f77460" style="width: 100.0%; height: 100.0%;">Adams County Fire Protection District<br>8055 N Washington ST, Denver, CO 80229-5818</div>`)[0];
+                popup_3dbc88f83fafd018f5621b0b6bfb7ea6.setContent(html_f188c463a45d8bffadb1258d82f77460);
+            
+        
+
+        marker_f8060afe8a572f4732cc7a62a735f0fe.bindPopup(popup_3dbc88f83fafd018f5621b0b6bfb7ea6)
+        ;
+
+        
+    
+    
+            var marker_15d43f3195dce188afdc96228b0a78ab = L.marker(
+                [39.9163334, -105.0675687],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_e40523d30eead5b734323a7a0ab42f55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_15d43f3195dce188afdc96228b0a78ab.setIcon(icon_e40523d30eead5b734323a7a0ab42f55);
+        
+    
+        var popup_d80a19c3f36c3983b80102b25e9642c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_191c3ad99f4a6c713888492fd248336c = $(`<div id="html_191c3ad99f4a6c713888492fd248336c" style="width: 100.0%; height: 100.0%;">North Metro Fire Rescue District<br>101 Spader WAY, Broomfield, CO 80020-2421</div>`)[0];
+                popup_d80a19c3f36c3983b80102b25e9642c9.setContent(html_191c3ad99f4a6c713888492fd248336c);
+            
+        
+
+        marker_15d43f3195dce188afdc96228b0a78ab.bindPopup(popup_d80a19c3f36c3983b80102b25e9642c9)
+        ;
+
+        
+    
+    
+            var marker_22f4ca37e3ae063c752565e39a148d07 = L.marker(
+                [39.8695235, -104.9846234],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_faefd3adfe2cda3d984ccea0b94aafbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_22f4ca37e3ae063c752565e39a148d07.setIcon(icon_faefd3adfe2cda3d984ccea0b94aafbb);
+        
+    
+        var popup_e230ace1ca46d230fc18b0a6f8430c81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1e300e1113a79b9daa9ec5540d37202 = $(`<div id="html_c1e300e1113a79b9daa9ec5540d37202" style="width: 100.0%; height: 100.0%;">Thornton Fire Department<br>9500 Civic Center DR, Thornton, CO 80229-4326</div>`)[0];
+                popup_e230ace1ca46d230fc18b0a6f8430c81.setContent(html_c1e300e1113a79b9daa9ec5540d37202);
+            
+        
+
+        marker_22f4ca37e3ae063c752565e39a148d07.bindPopup(popup_e230ace1ca46d230fc18b0a6f8430c81)
+        ;
+
+        
+    
+    
+            var marker_6cc5c4f30f6ee705a0f24dea669e3a48 = L.marker(
+                [39.8615517, -105.0485268],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_86ff7324774b22858ad259a46bc96b45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6cc5c4f30f6ee705a0f24dea669e3a48.setIcon(icon_86ff7324774b22858ad259a46bc96b45);
+        
+    
+        var popup_98161393c3bdeb5fb4bd4a4795e65b00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c224425bfad3d1f7f46db510d8b53edc = $(`<div id="html_c224425bfad3d1f7f46db510d8b53edc" style="width: 100.0%; height: 100.0%;">Westminster Fire Department<br>9110 Yates ST, Westminster, CO 80031-2540</div>`)[0];
+                popup_98161393c3bdeb5fb4bd4a4795e65b00.setContent(html_c224425bfad3d1f7f46db510d8b53edc);
+            
+        
+
+        marker_6cc5c4f30f6ee705a0f24dea669e3a48.bindPopup(popup_98161393c3bdeb5fb4bd4a4795e65b00)
+        ;
+
+        
+    
+    
+            var marker_ca25f42f19e989d230be5ddcf5c410f8 = L.marker(
+                [39.7102647, -104.8125206],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_bd5d5f49b89b2771af07d023daae2408 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca25f42f19e989d230be5ddcf5c410f8.setIcon(icon_bd5d5f49b89b2771af07d023daae2408);
+        
+    
+        var popup_468d6fb44847b5b3b7f310d223389aae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_727ebfea9e0f1d1bd3bc155433ac219f = $(`<div id="html_727ebfea9e0f1d1bd3bc155433ac219f" style="width: 100.0%; height: 100.0%;">Aurora Fire Department<br>15151 E Alameda Pkwy #4100, Aurora, CO 80012-1555</div>`)[0];
+                popup_468d6fb44847b5b3b7f310d223389aae.setContent(html_727ebfea9e0f1d1bd3bc155433ac219f);
+            
+        
+
+        marker_ca25f42f19e989d230be5ddcf5c410f8.bindPopup(popup_468d6fb44847b5b3b7f310d223389aae)
+        ;
+
+        
+    
+    
+            var marker_7fe708db0f525e3c918c2603a850428d = L.marker(
+                [39.64187090000001, -105.0269304],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_d1b4661f1dd6dfee63353a072660bfeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7fe708db0f525e3c918c2603a850428d.setIcon(icon_d1b4661f1dd6dfee63353a072660bfeb);
+        
+    
+        var popup_36768122c5ade14cf5a60fc06ac71e19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d2a9605b56e91b39770acde5a05c7d4 = $(`<div id="html_0d2a9605b56e91b39770acde5a05c7d4" style="width: 100.0%; height: 100.0%;">Sheridan Fire Department<br>4101 S Federal BLVD, Sheridan, CO 80110</div>`)[0];
+                popup_36768122c5ade14cf5a60fc06ac71e19.setContent(html_0d2a9605b56e91b39770acde5a05c7d4);
+            
+        
+
+        marker_7fe708db0f525e3c918c2603a850428d.bindPopup(popup_36768122c5ade14cf5a60fc06ac71e19)
+        ;
+
+        
+    
+    
+            var marker_45ee0c80e088a3f4a01eff131a4cbef0 = L.marker(
+                [39.574748, -104.882452],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_512a9f236088b623729c9bb35856f587 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45ee0c80e088a3f4a01eff131a4cbef0.setIcon(icon_512a9f236088b623729c9bb35856f587);
+        
+    
+        var popup_b29fed03177976bac4d1b8d007935921 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3679e66597fc296c54185441663101c7 = $(`<div id="html_3679e66597fc296c54185441663101c7" style="width: 100.0%; height: 100.0%;">South Metro Fire Rescue Authority<br>9195 E Mineral AVE, Centennial, CO 80112-3549</div>`)[0];
+                popup_b29fed03177976bac4d1b8d007935921.setContent(html_3679e66597fc296c54185441663101c7);
+            
+        
+
+        marker_45ee0c80e088a3f4a01eff131a4cbef0.bindPopup(popup_b29fed03177976bac4d1b8d007935921)
+        ;
+
+        
+    
+    
+            var marker_a955ba3f0c7245669af694d49ff9d598 = L.marker(
+                [40.0311175, -105.2466265],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_79b55ad8df358cf7f7389e01d78d77a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a955ba3f0c7245669af694d49ff9d598.setIcon(icon_79b55ad8df358cf7f7389e01d78d77a5);
+        
+    
+        var popup_00a2b2dcd97c86070d1cbe5d34edd1f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c7dfdde0161ef18d1c14b1f22e15e17 = $(`<div id="html_2c7dfdde0161ef18d1c14b1f22e15e17" style="width: 100.0%; height: 100.0%;">City of Boulder Fire Department<br>3065 Center Green DR, Boulder, CO 80301-2251</div>`)[0];
+                popup_00a2b2dcd97c86070d1cbe5d34edd1f9.setContent(html_2c7dfdde0161ef18d1c14b1f22e15e17);
+            
+        
+
+        marker_a955ba3f0c7245669af694d49ff9d598.bindPopup(popup_00a2b2dcd97c86070d1cbe5d34edd1f9)
+        ;
+
+        
+    
+    
+            var marker_b68ab9b4847adef417dda377468af791 = L.marker(
+                [40.0015753, -105.093935],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_3982e8ca0f089046bb9edb161444938c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b68ab9b4847adef417dda377468af791.setIcon(icon_3982e8ca0f089046bb9edb161444938c);
+        
+    
+        var popup_996f46ced9837fc0f07aa291cc75506f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5600c9605f4d6b2baeb39784b0118d8 = $(`<div id="html_b5600c9605f4d6b2baeb39784b0118d8" style="width: 100.0%; height: 100.0%;">Lafayette Fire Department<br>401 N 111TH ST, Lafayette, CO 80026</div>`)[0];
+                popup_996f46ced9837fc0f07aa291cc75506f.setContent(html_b5600c9605f4d6b2baeb39784b0118d8);
+            
+        
+
+        marker_b68ab9b4847adef417dda377468af791.bindPopup(popup_996f46ced9837fc0f07aa291cc75506f)
+        ;
+
+        
+    
+    
+            var marker_0aed818e1e274d6a13c4ef7a0202bdc1 = L.marker(
+                [39.7404018, -104.997531],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_8483428f590eb9c5327184540477bec7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0aed818e1e274d6a13c4ef7a0202bdc1.setIcon(icon_8483428f590eb9c5327184540477bec7);
+        
+    
+        var popup_67b93891a5e48ac2fd4ccf03da42d734 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fc2263c0f591a5cd8c3fe0bb0dabb89 = $(`<div id="html_9fc2263c0f591a5cd8c3fe0bb0dabb89" style="width: 100.0%; height: 100.0%;">Denver Fire Department<br>745 W Colfax AVE, Denver, CO 80204</div>`)[0];
+                popup_67b93891a5e48ac2fd4ccf03da42d734.setContent(html_9fc2263c0f591a5cd8c3fe0bb0dabb89);
+            
+        
+
+        marker_0aed818e1e274d6a13c4ef7a0202bdc1.bindPopup(popup_67b93891a5e48ac2fd4ccf03da42d734)
+        ;
+
+        
+    
+    
+            var marker_7ff2a05c0f00d1b6d3e4fe857b4f696f = L.marker(
+                [39.6395846, -106.9158292],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_2400c748f2ab60eff04d3060c0b11bd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7ff2a05c0f00d1b6d3e4fe857b4f696f.setIcon(icon_2400c748f2ab60eff04d3060c0b11bd7);
+        
+    
+        var popup_729a9dc09b7f23b297b6361bcf123e6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f34b73a731e0ed033d3d03cb4154a68 = $(`<div id="html_6f34b73a731e0ed033d3d03cb4154a68" style="width: 100.0%; height: 100.0%;">Eagle County Regional Airport Fire Department - ARFF<br>0219 Eldon Wilson RD, Gypsum, CO 81637</div>`)[0];
+                popup_729a9dc09b7f23b297b6361bcf123e6e.setContent(html_6f34b73a731e0ed033d3d03cb4154a68);
+            
+        
+
+        marker_7ff2a05c0f00d1b6d3e4fe857b4f696f.bindPopup(popup_729a9dc09b7f23b297b6361bcf123e6e)
+        ;
+
+        
+    
+    
+            var marker_7b33ab0f7f49f8d02f2825f0dc51c103 = L.marker(
+                [39.6454947, -106.5984683],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_f167265346876758dca5df5cf5c95d71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b33ab0f7f49f8d02f2825f0dc51c103.setIcon(icon_f167265346876758dca5df5cf5c95d71);
+        
+    
+        var popup_bc2f28407e58340cbd7c1035bec078ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21788273c2ff12e919ffed5c5d5e6b41 = $(`<div id="html_21788273c2ff12e919ffed5c5d5e6b41" style="width: 100.0%; height: 100.0%;">Eagle River Fire Protection District<br>1050 Edwards Village BLVD, Edwards, CO 81632</div>`)[0];
+                popup_bc2f28407e58340cbd7c1035bec078ac.setContent(html_21788273c2ff12e919ffed5c5d5e6b41);
+            
+        
+
+        marker_7b33ab0f7f49f8d02f2825f0dc51c103.bindPopup(popup_bc2f28407e58340cbd7c1035bec078ac)
+        ;
+
+        
+    
+    
+            var marker_92e041a4c038f4e71f69b775fce72b71 = L.marker(
+                [39.62785540000001, -106.4223213],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_840bb502def8296fba9b7452d6295284 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92e041a4c038f4e71f69b775fce72b71.setIcon(icon_840bb502def8296fba9b7452d6295284);
+        
+    
+        var popup_a0e82772152366ee50c5a8797f878799 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae6b1f20cb6e200ff5345653eb159abc = $(`<div id="html_ae6b1f20cb6e200ff5345653eb159abc" style="width: 100.0%; height: 100.0%;">Vail Fire & Emergency Services<br>2399 N Frontage RD W, Vail, CO 81657-4285</div>`)[0];
+                popup_a0e82772152366ee50c5a8797f878799.setContent(html_ae6b1f20cb6e200ff5345653eb159abc);
+            
+        
+
+        marker_92e041a4c038f4e71f69b775fce72b71.bindPopup(popup_a0e82772152366ee50c5a8797f878799)
+        ;
+
+        
+    
+    
+            var marker_86c8f4658360fc355091eb50a1977314 = L.marker(
+                [39.8036259, -105.4948524],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_d17e5eb1c492dd356149ddb3aaf884b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_86c8f4658360fc355091eb50a1977314.setIcon(icon_d17e5eb1c492dd356149ddb3aaf884b3);
+        
+    
+        var popup_3eecb0b03c05a8be5a612d8821a22850 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_621269cfda6bf26f4cdc94001277227d = $(`<div id="html_621269cfda6bf26f4cdc94001277227d" style="width: 100.0%; height: 100.0%;">Black Hawk Fire Department<br>137 Clear Creek ST, STE 200, Black Hawk, CO 80422</div>`)[0];
+                popup_3eecb0b03c05a8be5a612d8821a22850.setContent(html_621269cfda6bf26f4cdc94001277227d);
+            
+        
+
+        marker_86c8f4658360fc355091eb50a1977314.bindPopup(popup_3eecb0b03c05a8be5a612d8821a22850)
+        ;
+
+        
+    
+    
+            var marker_6704df4361fcfc87b122a822ae3e2ce6 = L.marker(
+                [39.8391081, -105.0874781],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_a9cd667e3f5d4041c38abfec2c8f302e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6704df4361fcfc87b122a822ae3e2ce6.setIcon(icon_a9cd667e3f5d4041c38abfec2c8f302e);
+        
+    
+        var popup_f19bb205b5a0157f7d956c87014258be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83fd1b35c3e174e5ef157b1a5cc1d66d = $(`<div id="html_83fd1b35c3e174e5ef157b1a5cc1d66d" style="width: 100.0%; height: 100.0%;">Arvada Fire Protection District<br>7903 Allison WAY, Arvada, CO 80005-5033</div>`)[0];
+                popup_f19bb205b5a0157f7d956c87014258be.setContent(html_83fd1b35c3e174e5ef157b1a5cc1d66d);
+            
+        
+
+        marker_6704df4361fcfc87b122a822ae3e2ce6.bindPopup(popup_f19bb205b5a0157f7d956c87014258be)
+        ;
+
+        
+    
+    
+            var marker_d56e09f731ceea82162784246133d0c5 = L.marker(
+                [39.70948120000001, -105.0869658],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_0f11ded3604eaaeeab11bbef660898d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d56e09f731ceea82162784246133d0c5.setIcon(icon_0f11ded3604eaaeeab11bbef660898d1);
+        
+    
+        var popup_6d94cda377a71bafc7afcc70a9246349 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54de71c6c12ec345b1eba169612384e7 = $(`<div id="html_54de71c6c12ec345b1eba169612384e7" style="width: 100.0%; height: 100.0%;">West Metro Fire Rescue<br>433 S Allison PKWY, Lakewood, CO 80226-3133</div>`)[0];
+                popup_6d94cda377a71bafc7afcc70a9246349.setContent(html_54de71c6c12ec345b1eba169612384e7);
+            
+        
+
+        marker_d56e09f731ceea82162784246133d0c5.bindPopup(popup_6d94cda377a71bafc7afcc70a9246349)
+        ;
+
+        
+    
+    
+            var marker_b54314751b7ed8fcca088d7983c94f0f = L.marker(
+                [39.0650364, -108.5623247],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_4111964ae8b84b8542c5eebd75e24122 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b54314751b7ed8fcca088d7983c94f0f.setIcon(icon_4111964ae8b84b8542c5eebd75e24122);
+        
+    
+        var popup_b59eb463df8fe343a736c17e2954ceb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b69d1df7f0b53af97ec3c5fc3986c14a = $(`<div id="html_b69d1df7f0b53af97ec3c5fc3986c14a" style="width: 100.0%; height: 100.0%;">City of Grand Junction Fire Department<br>625 Ute AVE, Grand Junction, CO 81501-7720</div>`)[0];
+                popup_b59eb463df8fe343a736c17e2954ceb0.setContent(html_b69d1df7f0b53af97ec3c5fc3986c14a);
+            
+        
+
+        marker_b54314751b7ed8fcca088d7983c94f0f.bindPopup(popup_b59eb463df8fe343a736c17e2954ceb0)
+        ;
+
+        
+    
+    
+            var marker_73bf7f8ade30d1b09862e3b6ff158fca = L.marker(
+                [37.2002483, -108.4988269],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_c309b4ff98098869ead067c9ff4ef5c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_73bf7f8ade30d1b09862e3b6ff158fca.setIcon(icon_c309b4ff98098869ead067c9ff4ef5c6);
+        
+    
+        var popup_5d25d1cc5b2f1f2eeeabd3859186ac1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95f63a9b788c19b3b41b90c357923114 = $(`<div id="html_95f63a9b788c19b3b41b90c357923114" style="width: 100.0%; height: 100.0%;">Mesa Verde National Park Fire Department<br>CRO Museum Loop RD, Mesa Verde National Park, CO 81330</div>`)[0];
+                popup_5d25d1cc5b2f1f2eeeabd3859186ac1f.setContent(html_95f63a9b788c19b3b41b90c357923114);
+            
+        
+
+        marker_73bf7f8ade30d1b09862e3b6ff158fca.bindPopup(popup_5d25d1cc5b2f1f2eeeabd3859186ac1f)
+        ;
+
+        
+    
+    
+            var marker_559c2bd5779e6c694f83e34d8141a2f0 = L.marker(
+                [38.2921899, -104.5925984],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_947fc38ccee31ca122b237047efe27fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_559c2bd5779e6c694f83e34d8141a2f0.setIcon(icon_947fc38ccee31ca122b237047efe27fb);
+        
+    
+        var popup_0484f7c355a242454cf6d8ba611ea3ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e62f0aad4a4434c208195a8ac4eb9ac = $(`<div id="html_1e62f0aad4a4434c208195a8ac4eb9ac" style="width: 100.0%; height: 100.0%;">Pueblo Fire Department<br>1551 Bonforte BLVD, Pueblo, CO 81001-1642</div>`)[0];
+                popup_0484f7c355a242454cf6d8ba611ea3ae.setContent(html_1e62f0aad4a4434c208195a8ac4eb9ac);
+            
+        
+
+        marker_559c2bd5779e6c694f83e34d8141a2f0.bindPopup(popup_0484f7c355a242454cf6d8ba611ea3ae)
+        ;
+
+        
+    
+    
+            var marker_b6a9b4ce0c3cfe946a39d9f0c15104b8 = L.marker(
+                [38.2705996, -104.6101033],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_5441afd4f2d8dd849afc3243078f4801 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b6a9b4ce0c3cfe946a39d9f0c15104b8.setIcon(icon_5441afd4f2d8dd849afc3243078f4801);
+        
+    
+        var popup_e2d1b4e381edb51ca304e3133b69b992 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3299d8de303ad207ffda3906da5ba0d1 = $(`<div id="html_3299d8de303ad207ffda3906da5ba0d1" style="width: 100.0%; height: 100.0%;">Pueblo Rural Fire District<br>29912 HWY 50 E, Pueblo, CO 81006-9685</div>`)[0];
+                popup_e2d1b4e381edb51ca304e3133b69b992.setContent(html_3299d8de303ad207ffda3906da5ba0d1);
+            
+        
+
+        marker_b6a9b4ce0c3cfe946a39d9f0c15104b8.bindPopup(popup_e2d1b4e381edb51ca304e3133b69b992)
+        ;
+
+        
+    
+    
+            var marker_b9ae30c63637a5122a2b754d0c1cc455 = L.marker(
+                [40.4533531, -106.8153804],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_0181060df0995a542cf9ee62441ef399 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b9ae30c63637a5122a2b754d0c1cc455.setIcon(icon_0181060df0995a542cf9ee62441ef399);
+        
+    
+        var popup_2c21ef608a6686507763d9fd7b437f0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd453950317fc86d2dc94fb0f59e1a10 = $(`<div id="html_bd453950317fc86d2dc94fb0f59e1a10" style="width: 100.0%; height: 100.0%;">City of Steamboat Springs<br>2600 Pine Grove RD, Steamboat Springs, CO 80477</div>`)[0];
+                popup_2c21ef608a6686507763d9fd7b437f0d.setContent(html_bd453950317fc86d2dc94fb0f59e1a10);
+            
+        
+
+        marker_b9ae30c63637a5122a2b754d0c1cc455.bindPopup(popup_2c21ef608a6686507763d9fd7b437f0d)
+        ;
+
+        
+    
+    
+            var marker_6037582523638298ffabde199a5249e6 = L.marker(
+                [39.63237609999999, -106.0750343],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_f66acfa9f965a47556c5bcb7cc298173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6037582523638298ffabde199a5249e6.setIcon(icon_f66acfa9f965a47556c5bcb7cc298173);
+        
+    
+        var popup_7e8cf7df0e12ff0ced847ec1ec2c0777 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbbf01c3555214f6a006db17a2f974c5 = $(`<div id="html_dbbf01c3555214f6a006db17a2f974c5" style="width: 100.0%; height: 100.0%;">Lake Dillon Fire Protection District<br>401 Blue River PKWY, Silverthorne, CO 80498</div>`)[0];
+                popup_7e8cf7df0e12ff0ced847ec1ec2c0777.setContent(html_dbbf01c3555214f6a006db17a2f974c5);
+            
+        
+
+        marker_6037582523638298ffabde199a5249e6.bindPopup(popup_7e8cf7df0e12ff0ced847ec1ec2c0777)
+        ;
+
+        
+    
+    
+            var marker_74e2c826e0654d72bb2fc42037f61235 = L.marker(
+                [39.4857575, -106.0458465],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_fdecb852a3474936322f63888dc4e903 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_74e2c826e0654d72bb2fc42037f61235.setIcon(icon_fdecb852a3474936322f63888dc4e903);
+        
+    
+        var popup_2434179478f00ed26fd3ed9e64bb8661 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca283375394b39ab70ae56feb34fdc5a = $(`<div id="html_ca283375394b39ab70ae56feb34fdc5a" style="width: 100.0%; height: 100.0%;">Red White & Blue Fire District<br>316 N Main ST, Breckenridge, CO 80424</div>`)[0];
+                popup_2434179478f00ed26fd3ed9e64bb8661.setContent(html_ca283375394b39ab70ae56feb34fdc5a);
+            
+        
+
+        marker_74e2c826e0654d72bb2fc42037f61235.bindPopup(popup_2434179478f00ed26fd3ed9e64bb8661)
+        ;
+
+        
+    
+    
+            var marker_bd900526f94b8bad850c1411def60b32 = L.marker(
+                [40.3771542, -104.7118659],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_eec25d7df85956334d724c45360b6537 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd900526f94b8bad850c1411def60b32.setIcon(icon_eec25d7df85956334d724c45360b6537);
+        
+    
+        var popup_4642ee9a4519cb5b91ab52b3d3edf90e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5510e5e956108206b87aee0fd245d7ad = $(`<div id="html_5510e5e956108206b87aee0fd245d7ad" style="width: 100.0%; height: 100.0%;">Evans Fire Protection District<br>2100 37th ST, Evans, CO 80620</div>`)[0];
+                popup_4642ee9a4519cb5b91ab52b3d3edf90e.setContent(html_5510e5e956108206b87aee0fd245d7ad);
+            
+        
+
+        marker_bd900526f94b8bad850c1411def60b32.bindPopup(popup_4642ee9a4519cb5b91ab52b3d3edf90e)
+        ;
+
+        
+    
+    
+            var marker_35fa170d86420129559c6a64cd8bbc8b = L.marker(
+                [40.122616, -104.9812815],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_920a6bacfb82ecf6adcf5ab51502911b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35fa170d86420129559c6a64cd8bbc8b.setIcon(icon_920a6bacfb82ecf6adcf5ab51502911b);
+        
+    
+        var popup_f4de76e8ed7447040350cf45ed5320f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70c7751610323ea17b6f3512292d9bd5 = $(`<div id="html_70c7751610323ea17b6f3512292d9bd5" style="width: 100.0%; height: 100.0%;">Frederick-Firestone Fire Protection District<br>8426 Kosmerl PL, Frederick, CO 80504-5444</div>`)[0];
+                popup_f4de76e8ed7447040350cf45ed5320f5.setContent(html_70c7751610323ea17b6f3512292d9bd5);
+            
+        
+
+        marker_35fa170d86420129559c6a64cd8bbc8b.bindPopup(popup_f4de76e8ed7447040350cf45ed5320f5)
+        ;
+
+        
+    
+    
+            var marker_916d02828bf42b6b50e1c1a0f8c68850 = L.marker(
+                [40.4203589, -104.6950302],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_8fbe6fd724fd270af3b2e8c35ca5918a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_916d02828bf42b6b50e1c1a0f8c68850.setIcon(icon_8fbe6fd724fd270af3b2e8c35ca5918a);
+        
+    
+        var popup_0f2220c172c00b3b56cfc0bc3b98c107 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5f5199d250cab9c8d8eec497860a617 = $(`<div id="html_d5f5199d250cab9c8d8eec497860a617" style="width: 100.0%; height: 100.0%;">Greeley Fire Department<br>1155 10th AVE, Greeley, CO 80631-3813</div>`)[0];
+                popup_0f2220c172c00b3b56cfc0bc3b98c107.setContent(html_d5f5199d250cab9c8d8eec497860a617);
+            
+        
+
+        marker_916d02828bf42b6b50e1c1a0f8c68850.bindPopup(popup_0f2220c172c00b3b56cfc0bc3b98c107)
+        ;
+
+        
+    
+    
+            var marker_64b5f9e8b9fc646a62c3093762d1947c = L.marker(
+                [40.1581199, -104.985332],
+                {}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+        
+    
+            var icon_c38256a74bbe64fa8ded9ccc56befd66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_64b5f9e8b9fc646a62c3093762d1947c.setIcon(icon_c38256a74bbe64fa8ded9ccc56befd66);
+        
+    
+        var popup_e751f27fd1c8f7a50c9feb04d34298af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc1c89cf3775e55359fe75079d47bdea = $(`<div id="html_dc1c89cf3775e55359fe75079d47bdea" style="width: 100.0%; height: 100.0%;">Mountain View Fire Protection District<br>3561 Stagecoach RD, Longmont, CO 80504-6256</div>`)[0];
+                popup_e751f27fd1c8f7a50c9feb04d34298af.setContent(html_dc1c89cf3775e55359fe75079d47bdea);
+            
+        
+
+        marker_64b5f9e8b9fc646a62c3093762d1947c.bindPopup(popup_e751f27fd1c8f7a50c9feb04d34298af)
+        ;
+
+        
+    
+    
+            var layer_control_cfbfd983dec4497c7a6cd5c15dc215a2_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_80501bbc82a5e96cb14d33d92c6a6b79,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_cfbfd983dec4497c7a6cd5c15dc215a2 = L.control.layers(
+                layer_control_cfbfd983dec4497c7a6cd5c15dc215a2_layers.base_layers,
+                layer_control_cfbfd983dec4497c7a6cd5c15dc215a2_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_135d12b07fd5fbd86906110d27ebdf2f);
+
+        
+</script>
+</html>
